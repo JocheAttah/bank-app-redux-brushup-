@@ -2,11 +2,11 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function AccountStatus() {
-  const isSavings = useSelector((state) => state.isSavings);
+  const isSavings = useSelector((state) => state.banking.isSavings);
 
   return (
     <div>
-      <h1>{isSavings ? "Savings Account" : "Checking Account" }</h1>
+      <h1>{isSavings ? "Savings Account" : "Checking Account"}</h1>
     </div>
   );
 }

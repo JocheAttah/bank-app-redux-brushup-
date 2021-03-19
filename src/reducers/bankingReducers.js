@@ -1,7 +1,6 @@
 const initialState = {
   balance: 0,
   isSavings: false,
-  isLoggedIn: false,
 };
 
 export const bankingReducers = (state = initialState, action) => {
@@ -25,10 +24,6 @@ export const bankingReducers = (state = initialState, action) => {
     case "CHANGE_ACCOUNT":
       //logic for change of account
       return { ...state, isSavings: !state.isSavings };
-
-    case "LOGGED_IN":
-        //login for loign
-      return { ...state, isLoggedIn: !state.isLoggedIn };
 
     default:
       return state; // returns the old state ... no change done

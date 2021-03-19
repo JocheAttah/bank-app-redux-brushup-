@@ -8,12 +8,14 @@ import {
   toggleAccount,
 } from "../actions/bankingActions";
 
+
+
 function Banking() {
   const [amount, setAmount] = useState("");
   const dispatch = useDispatch();
-  const isLoggedIn = useSelector((state) => state.isLoggedIn);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
-  console.log(isLoggedIn);
+//   console.log(isLoggedIn);
 
   const handleDeposit = () => {
     dispatch(deposit(amount));

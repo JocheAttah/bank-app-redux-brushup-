@@ -15,8 +15,4 @@ const toggleAccount = () => {
   return { type: 'CHANGE_ACCOUNT' };
 };
 
-const toggleLogIn = () => {
-    return {type: 'LOGGED_IN'}
-}
-
-export { deposit, withdraw, collectInterest, deleteAccount, toggleAccount ,toggleLogIn};
+export { deposit, withdraw, collectInterest, deleteAccount, toggleAccount };
